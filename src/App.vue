@@ -1,29 +1,24 @@
 <template>
   <div id="app">
     <Navbar />
-    <HelloWord/>
-    <Cards />
-    <Centers/>
+    <Carousel />
+    <Courses />
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar'
-import HelloWord from './components/HelloWorld'
-import Cards from './components/Cards'
-import Centers from './components/Centers.vue'
+import Carousel from './components/Carousel'
+import Courses from './components/Courses'
 
 export default {
   name: 'app',
   components: {
     Navbar,
-    HelloWord,
-    Cards,
-    Centers
+    Carousel,
+    Courses
   }
-  
 }
-
 </script>
 
 <style>
