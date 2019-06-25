@@ -1,22 +1,16 @@
 <template>
   <div id="app">
-    <Navbar />
-    <Carousel />
-    <Courses />
+    <Login/>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import Carousel from './components/Carousel'
-import Courses from './components/Courses'
+import Login from './components/login.vue'
 
 export default {
   name: 'app',
   components: {
-    Navbar,
-    Carousel,
-    Courses
+    Login
   }
 }
 </script>
@@ -28,7 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 0px;
-  padding : 0px;
+  margin-top: 60px;
 }
 </style>
