@@ -5,6 +5,8 @@
     <Blogs />
     <Footer />
     <ContactUs />
+    <Carousel />
+    <Courses />
   </div>
 </template>
 
@@ -15,6 +17,8 @@ import Blogs from './components/Blogs'
 import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
 
+import Carousel from './components/Carousel'
+import Courses from './components/Courses'
 
 export default {
   name: 'app',
@@ -23,7 +27,9 @@ export default {
     Advertisements,
     Blogs,
     Footer,
-    ContactUs
+    ContactUs,
+    Carousel,
+    Courses
   }
 }
 </script>
