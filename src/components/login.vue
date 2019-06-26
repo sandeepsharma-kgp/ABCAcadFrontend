@@ -8,10 +8,11 @@
   <div id="login">
     <div class="sign-up">
       <h1> Welcome to Albedo </h1>
-      <input type="text" placeholder="Full Name" required/>
-      <input type="email" placeholder="Email" required/>
-      <input type="tele" pattern="[0-9]{10}" placeholder="Contact Number" required/>
-      <select placeholder="Category" onchange="myFunction">
+      <form v-on:submit="signUpData">
+      <input type="text" placeholder="Full Name" v-model="signUp.name" required/>
+      <input type="email" placeholder="Email" v-model="signUp.email" required/>
+      <input type="tele" pattern="[0-9]{10}" placeholder="Contact Number" v-model="signUp.contact" required/>
+      <select placeholder="Category" v-model="signUp.category" required>
         <option  disabled value="" selected data-default>Category</option>
         <option value = "Unreserved">Unreserved</option>
         <option value = "OBC">OBC</option>
@@ -23,23 +24,23 @@
         <option value = "ST-PH">ST-PH</option>
       </select>
       <img class="select-arrow" src = "../assets/down_arrow.svg">
-      <input type="text" pattern="[0-9]{6}" maxlength="6" placeholder="Pin Code" required/>
-      <input type="text" placeholder="City" required/>
-      <input type="password" placeholder="Type-Password" required/>
+      <input type="text" pattern="[0-9]{6}" maxlength="6" placeholder="Pin Code" v-model="signUp.pin" required/>
+      <input type="text" placeholder="City" v-model="signUp.city" required/>
+      <input type="password" placeholder="Type-Password" v-model="signUp.password" required/>
       <input type="submit" value="SIGN ME UP">
+      </form>
     </div>
     
     <div class="sign-in">
       <h2>Sign In</h2>
-      <form style="position:relative; top: 80px;">
-        <input class="sign-in-email" type="email" placeholder="Email" required/>
-        <input style="position:relative; top: 15px;" class="sign-in-password" type="password" placeholder="Password" required/>
+      <form v-on:submit="signInData" style="position:relative; top: 80px;">
+        <input class="sign-in-email" type="email" placeholder="Email" v-model="signIn.email" required/>
+        <input style="position:relative; top: 15px;" class="sign-in-password" type="password" v-model="signIn.password" placeholder="Password" required/>
       
-        <label class="container">Remember me
+       <label class="container"> Remember me
           <input type="checkbox" value="marked">
           <span class="checkmark"></span>
         </label>
-        
         <input style="position:relative; top: 50px;" type="submit" value="SIGN IN">
         <div style="position:relative; top: 50px;" class="psw">Forgot Password?</div>
       </form>
@@ -73,7 +74,7 @@ export default {
         name:null,
         email:null,
         contact:null,
-        category:null,
+        category:'',
         pin:null,
         city:null,
         password:null
@@ -83,25 +84,25 @@ export default {
         password:null
       }
     }
+  },
+  methods:{
+    signUpData: function(){
+      console.log(JSON.stringify(this.signUp));
+    },
+    signInData: function(){
+      console.log(JSON.stringify(this.signIn));
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-body{
-  margin: 0;
-  padding: 0;
-  background: #efe4d3;
-  font-size: 16px;
-  color: #777;
-  font-family: sans-serif;
-  font-weight: 300;
-}
+<style scoped>
+
 #login{
   position: relative;
   margin:1% auto;
-  width: 1000px;
+  width: 80%;
   height: 550px;
   background: #fff;
 
@@ -112,7 +113,7 @@ body{
   left: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 500px;
+  width: 50%;
   height: 500px;
 }
 h1 {
@@ -131,7 +132,6 @@ h2 {
   color:white;
   font-size: 12px;
 }
-select,
 input[type="text"],
 input[type="tele"],
 input[type="email"],
@@ -142,7 +142,7 @@ input[type="password"]
   margin-bottom: 20px;
   padding: 4px;
   padding-left: 16px;
-  width: 400px;
+  width: 100%;
   height: 33px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -152,6 +152,19 @@ input[type="password"]
   transition: 0.2s ease;
 }
 select{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  padding-left: 16px;
+  width: 100%;
+  height: 33px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border: 3px solid #e4e4e4;
+  border-radius: 17px;
+  transition: 0.2s ease;
   color: gray;
   background: transparent;
   -moz-appearance: none;
@@ -162,7 +175,7 @@ select{
   width: 30px;
   position: absolute;
   top: 240px;
-  left: 400px;
+  left: calc(100% - 80px);
 }
 select option {
   color: black;
@@ -177,7 +190,7 @@ input[type="submit"]{
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 4px;
-  width: 400px;
+  width: 100%;
   height: 35px;
   background: #e67300;
   border: none;
@@ -200,7 +213,7 @@ input[type="submit"]:focus
   right: 0;
   box-sizing: border-box;
   padding: 40px;
-  width: 500px;
+  width: 50%;
   height: 550px;
   background: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,0.5)), 
     url("../assets/dirt-gardening-grow-1214405.jpg");
@@ -210,8 +223,8 @@ input[type="submit"]:focus
 }
 .or{
   position: absolute;
-  top: 265px;
-  left: 480px;
+  top: 50%;
+  left: calc(50% - 20px);;
   width: 40px;
   height: 40px;
   background: #ffcc9a;
@@ -250,8 +263,7 @@ input[type="submit"]:focus
 .checkmark {
   position: absolute;
   border: #fff;
-  top: 0;
-  left: 155px;
+  left: calc(50% - 50px);
   height: 10px;
   width: 10px;
   background-color: transparent;
@@ -309,12 +321,12 @@ input:focus, textarea:focus, select:focus{
   padding-top: 50px;
 }
 
-/* Modal Content/Box */
+
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
 }
 
 /* Style the horizontal ruler */
@@ -326,7 +338,7 @@ hr {
 /* The Close Button (x) */
 .close {
   position: absolute;
-  left: 1200px;
+  right: 38px;
   top: 15px;
   font-size: 40px;
   font-weight: bold;
@@ -338,4 +350,46 @@ hr {
   color: #f44336;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #login{
+    width : 100%;
+    height : auto;
+  }
+  .sign-up{
+  background:  white;
+  width: 100%;
+  height: 600px;
+}
+  .sign-in{
+  position: absolute;
+  top: 600px;
+  right: none;
+  left: 0px;
+  width: 100%;
+  
+}
+select,
+input[type="text"],
+input[type="tele"],
+input[type="email"],
+input[type="password"]
+{
+  
+  width: 100%;
+} 
+input[type="submit"]{
+  width: 100%;
+}
+.or{
+  position: absolute;
+  top: 580px;
+  left: calc(50% - 20px);
+}
+.select-arrow{
+  position: absolute;
+  top: 240px;
+}
+}
+
 </style>
