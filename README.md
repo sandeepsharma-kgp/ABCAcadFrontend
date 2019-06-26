@@ -1,4 +1,4 @@
-# client
+# albedo
 
 ## Project setup
 ```

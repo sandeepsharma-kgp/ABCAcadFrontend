@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <Login/>
+    <Navbar />
+    <Advertisements />
+    <Blogs />
+    <Footer />
+    <ContactUs />
   </div>
 </template>
 
 <script>
-import Login from './components/login.vue'
+import Navbar from './components/Navbar'
+import Advertisements from './components/Advertisements'
+import Blogs from './components/Blogs'
+import Footer from './components/Footer'
+import ContactUs from './components/ContactUs'
+
 
 export default {
   name: 'app',
   components: {
-    Login
+    Navbar,
+    Advertisements,
+    Blogs,
+    Footer,
+    ContactUs
   }
 }
 </script>
@@ -22,6 +35,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0px;
+  padding : 0px;
 }
 </style>
