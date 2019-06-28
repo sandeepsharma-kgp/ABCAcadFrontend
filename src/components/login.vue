@@ -34,6 +34,7 @@
     <div class="sign-in">
       <h2>Sign In</h2>
       <form v-on:submit="signInData" style="position:relative; top: 80px;">
+        <div class="error" v-if="error">{{error}}</div>
         <input class="sign-in-email" type="email" placeholder="Email" v-model="signIn.email" required/>
         <input style="position:relative; top: 15px;" class="sign-in-password" type="password" v-model="signIn.password" placeholder="Password" required/>
       
@@ -69,7 +70,7 @@ export default {
   name: 'Login',
   data(){
     return{
-      error:'',
+      error:'username or password is incorrect',
       signUp:{
         name:null,
         email:null,
@@ -131,6 +132,7 @@ h2 {
 .psw{
   color:white;
   font-size: 12px;
+  cursor: pointer;
 }
 input[type="text"],
 input[type="tele"],
@@ -350,6 +352,17 @@ hr {
   color: #f44336;
   cursor: pointer;
 }
+div.error{
+  margin-bottom: 10px;
+  padding: 4px;
+  display: block;
+  box-sizing: border-box;
+  border:solid 1px #f44336;
+  background: #ffe6e6;
+  font-family: sans-serif;
+  font-size: 10px;
+  border-radius: 3px;
+}
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #login{
@@ -390,6 +403,7 @@ input[type="submit"]{
   position: absolute;
   top: 240px;
 }
+
 }
 
 </style>
