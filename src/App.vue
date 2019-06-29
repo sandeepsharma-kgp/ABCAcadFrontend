@@ -4,6 +4,9 @@
     <HelloWord/>
     <Cards />
     <Centers/>
+    <Students/>
+    <Videos/>
+   
   </div>
 </template>
 
@@ -12,6 +15,8 @@ import Navbar from './components/Navbar'
 import HelloWord from './components/HelloWorld'
 import Cards from './components/Cards'
 import Centers from './components/Centers.vue'
+import Students from './components/Students.vue'
+import Videos from './components/Videos.vue'
 
 export default {
   name: 'app',
@@ -19,7 +24,10 @@ export default {
     Navbar,
     HelloWord,
     Cards,
-    Centers
+    Centers,
+    Students,
+    Videos
+    
   }
   
 }

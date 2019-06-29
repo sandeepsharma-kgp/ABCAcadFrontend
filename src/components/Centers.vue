@@ -1,60 +1,195 @@
 <template>
-  <div>
+  <div style="padding:0px 1px">
+    <div>
     <b-carousel
       id="carousel-1"
       v-model="slide"
       :interval="4000"
       controls
       indicators
-      background="#000000"
+      background="#FCF6F6"
       img-width="1024"
-      img-height="480"
-      style="text:black"
-     
+      img-height="280"
+      
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-      <!-- Text slides with image -->
-      <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="https://picsum.photos/1024/480/?image=52"
-      ></b-carousel-slide>
+      <b-carousel-slide caption="" img-blank img-alt="" style="background-color:" >
+        <div class="container">
+        <div>
+            <h4 class="text-dark" style="font-weight: bold;font-size: 30px;padding:25px 0px">Centers</h4>
+        </div>
+      <b-card-group  style="padding:0px;">
+       <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Vishal Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
-      <!-- Slides with custom text -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-        <h1>Hello world!</h1>
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    </b-card-text> 
+            </b-card>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Kalyan Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+      </b-card-group>
+      </div>
       </b-carousel-slide>
 
-      <!-- Slides with image only -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
+       <b-carousel-slide caption="" img-blank img-alt="" style="background-color:" >
+        <div class="container">
+        <div>
+            <h4 class="text-dark" style="font-weight: bold;font-size: 30px;padding:25px 0px">Centers</h4>
+        </div>
+      <b-card-group  style="padding:0px;">
+       <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Vishal Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-      <b-carousel-slide>
-        <img
-          slot="img"
-          class="d-block img-fluid w-100"
-          width="1024"
-          height="480"
-          src="https://picsum.photos/1024/480/?image=55"
-          alt="image slot"
-        >
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Kalyan Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+      </b-card-group>
+      </div>
+      </b-carousel-slide>
+     
+    <b-carousel-slide caption="" img-blank img-alt="" style="background-color:" >
+        <div class="container">
+        <div>
+            <h4 class="text-dark" style="font-weight: bold;font-size: 30px;padding:25px 0px">Centers</h4>
+        </div>
+      <b-card-group  style="padding:0px;">
+       <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Vishal Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                  <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Kalyan Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+      </b-card-group>
+      </div>
       </b-carousel-slide>
 
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-        </p>
+       <b-carousel-slide caption="" img-blank img-alt="" style="background-color:" >
+        <div class="container">
+        <div>
+            <h4 class="text-dark" style="font-weight: bold;font-size: 30px;padding:25px 0px">Centers</h4>
+        </div>
+      <b-card-group  style="padding:0px;">
+       <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Vishal Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 5px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b-card title="" style="background-color:#FFFFFF;padding: 0px 0px;">
+            <h5 class="text-primary" style="font-weight: bold">Kalyan Nagar</h5>
+                <b-card-text style="text:bold; " >
+                    <div>    
+                    <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
+                          </div>
+                    <div class="container">
+                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+
+                    </div>
+                    <div class="container">
+                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    </div>
+                    
+                </b-card-text> 
+            </b-card>
+      </b-card-group>
+      </div>
       </b-carousel-slide>
     </b-carousel>
-
-    <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
+  <p class="mt-4">
+       
     </p>
+    </div>
+
   </div>
 </template>
 
@@ -68,7 +203,12 @@
     },
     methods: {
       
-      
+      }
     }
-  }
+  
 </script>
+<style>
+.carousel-caption h4 a {
+    color: #000;
+}
+</style>
