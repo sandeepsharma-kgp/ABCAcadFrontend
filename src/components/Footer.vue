@@ -2,10 +2,10 @@
 <div>
     <div class="social">
         Connect with Us<br>
-        <b-img :src="require('../assets/icons/facebook (1).svg')" style="padding: 14px;"></b-img>
+        <b-img :src="require('../assets/icons/facebook.svg')" style="padding: 14px;"></b-img>
         <b-img :src="require('../assets/icons/twitter.svg')" style="padding: 14px;"></b-img>
         <b-img :src="require('../assets/icons/gmail.svg')" style="padding: 14px;"></b-img>
-        <b-img :src="require('../assets/icons/youtube (1).svg')" style="padding: 14px;"></b-img>
+        <b-img :src="require('../assets/icons/youtube.svg')" style="padding: 14px;"></b-img>
         <b-img :src="require('../assets/icons/instagram.svg')" style="padding: 14px;"></b-img>
     </div>
     <div class="copright" style="height:50px;">

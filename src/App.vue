@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <Navbar />
+    <Carousel />
+    <Courses />
     <Advertisements />
     <Blogs />
     <Footer />
     <ContactUs />
-    <Carousel />
-    <Courses />
   </div>
 </template>
 
@@ -16,7 +16,6 @@ import Advertisements from './components/Advertisements'
 import Blogs from './components/Blogs'
 import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
-
 import Carousel from './components/Carousel'
 import Courses from './components/Courses'
 
