@@ -2,7 +2,7 @@
 <template>
    <div>
        <div style="">
-           <h4 class="text-dark" style="font-weight: bold;font-size: 35px;padding:px 0px">Videos</h4>
+           <h5 class="text-dark" style="font-weight: bold;font-size: 35px;padding:px 0px">Videos</h5>
        </div>
     <div class="row">
 
