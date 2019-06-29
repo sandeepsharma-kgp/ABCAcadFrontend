@@ -70,7 +70,7 @@ export default {
   name: 'Login',
   data(){
     return{
-      error:'username or password is incorrect',
+      error:'',
       signUp:{
         name:null,
         email:null,
@@ -319,7 +319,7 @@ input:focus, textarea:focus, select:focus{
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color:  rgba(231, 180, 165, 0.486);
   padding-top: 50px;
 }
 
@@ -344,7 +344,7 @@ hr {
   top: 15px;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: black;
 }
 
 .close:hover,
