@@ -12,12 +12,12 @@
 
 <script>
 import Navbar from './components/Navbar'
-import Advertisements from './components/Advertisements'
-import Blogs from './components/Blogs'
+import Advertisements from './pages/Advertisements'
+import Blogs from './pages/Blogs'
 import Footer from './components/Footer'
 import ContactUs from './components/ContactUs'
-import Carousel from './components/Carousel'
-import Courses from './components/Courses'
+import Carousel from './pages/Carousel'
+import Courses from './pages/Courses'
 
 export default {
   name: 'app',
