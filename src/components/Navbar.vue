@@ -1,33 +1,30 @@
 <template>
 <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">Albedo Academy</b-navbar-brand>
+    <b-navbar toggleable="lg" type="dark" variant="info" fixed="top">
+    <b-navbar-brand href="#" style="font-weight:bold; font-size:27px;">Albedo Academy</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
 
-      
+      <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">  
-          <a href="#" class = "call"><b-img :src="require('../assets/Icons/call1.svg')" style="padding : 14px;"></b-img><h8 style="padding : 14px; padding-left:0px;">+91xxxxxxxxxx</h8></a>
+          <a href="#" class = "call"><b-img :src="require('../assets/icons/call.svg')" style="padding : 14px;"></b-img><h8 style="padding : 14px; padding-left:0px;">+91-xxxxxxxxxx</h8></a>
           <b-button variant="outline-dark" class="scholar">Scholarship</b-button>
           <b-nav-item href="#" style="padding:5px;" active>About Us</b-nav-item>
           <b-nav-item href="#" style="padding:5px;" active>Doubts & Solution</b-nav-item>
           <b-nav-item-dropdown text="All Program" right type="dark" style="padding:5px;">
-            <b-dropdown-item href="#">EN</b-dropdown-item>
-            <b-dropdown-item href="#">ES</b-dropdown-item>
-            <b-dropdown-item href="#">RU</b-dropdown-item>
-            <b-dropdown-item href="#">FA</b-dropdown-item>
+            <b-dropdown-item href="#">Class 8-9</b-dropdown-item>
+            <b-dropdown-item href="#">Class 9-10</b-dropdown-item>
+            <b-dropdown-item href="#">Class 11-12</b-dropdown-item>
           </b-nav-item-dropdown>
+          <b-img :src="require('../assets/icons/man-user.svg')" style="padding : 14px;"></b-img>
+          <b-img :src="require('../assets/icons/map-pin-marked.svg')" style="padding : 14px;"></b-img>
           
-      <b-img :src="require('../assets/Icons/mappin.svg')" style="padding : 14px;"></b-img>
-          <b-img :src="require('../assets/Icons/manuser.svg')"></b-img>
       </b-navbar-nav>
     </b-collapse>
-  </b-navbar>
- <h3></h3>
+  </b-navbar>  
 </div>
-
 </template>
 
 <script>
@@ -36,15 +33,16 @@ export default {
 }
 </script>
 
-<style scoped>                                                           
+<style scoped>
 .navbar {
-    background-color : rgb(240, 109, 61) !important;
+    background-color : #e16119 !important;
 }
 .scholar{
   background : none;
   color :white;
-  border-radius : 50px;
+  border-radius : 15px;
   border-color: white;
+  
 }
 .call{
   color : white;
@@ -52,7 +50,5 @@ export default {
 }
 .call:hover{
   color:white;
-
 }
-
 </style>

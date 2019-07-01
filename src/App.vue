@@ -29,9 +29,7 @@ export default {
     Videos
     
   }
-  
 }
-
 </script>
 
 <style>
