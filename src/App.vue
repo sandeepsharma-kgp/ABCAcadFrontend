@@ -5,8 +5,7 @@
     <Cards />
     <Centers/>
     <Students/>
-    <Videos/>
-   
+    <Videos/>  
     <Carousel />
     <Courses />
     <Advertisements />
