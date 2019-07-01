@@ -1,11 +1,11 @@
 <script>
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
+import NavBar from "@/components/Navbar";
+import FooterBar from "@/components/Footer";
 
 export default {
   components: {
     NavBar,
-    Footer
+    FooterBar
   }
 };
 </script>

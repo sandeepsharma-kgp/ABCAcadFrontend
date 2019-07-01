@@ -1,13 +1,13 @@
 <script>
-import NavBar from "@/components/NavBar";
-import ContactUs from "@/components/ContactUs";
-import Footer from "@/components/Footer";
+import NavBar from "../components/Navbar.vue";
+import ContactUs from "@/components/ContactUs.vue";
+import FooterBar from "@/components/Footer.vue";
 
 export default {
   components: {
     NavBar,
     ContactUs,
-    Footer
+    FooterBar
   }
 };
 </script>
@@ -29,6 +29,6 @@ export default {
     </div>
 
     <footer-bar />
-    <ContactUS/>
+    <ContactUs></ContactUs>
   </div>
 </template>

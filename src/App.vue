@@ -1,46 +1,31 @@
 <template>
   <div id="app">
-    <Navbar />
-    <Carousel />
-    <Courses />
-    <Advertisements />
-    <Blogs />
-    <Footer />
-    <ContactUs />
+    <component :is="layout">
+      <router-view/>
+    </component>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import Advertisements from './pages/Advertisements'
-import Blogs from './pages/Blogs'
-import Footer from './components/Footer'
-import ContactUs from './components/ContactUs'
-import Carousel from './pages/Carousel'
-import Courses from './pages/Courses'
+const default_layout = "default";
 
 export default {
-  name: 'app',
-  components: {
-    Navbar,
-    Advertisements,
-    Blogs,
-    Footer,
-    ContactUs,
-    Carousel,
-    Courses
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || default_layout) + "-layout";
+    }
+  },
+
+  created() {
+    // nothing defined here (when this.$route.path is other than "/")
+    console.log(this.$route, this.$route.meta.layout);
+  },
+
+  updated() {
+    // something defined here whatever the this.$route.path
+    console.log(this.$route, this.$route.meta.layout);
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin: 0px;
-  padding : 0px;
-}
-</style>
+
