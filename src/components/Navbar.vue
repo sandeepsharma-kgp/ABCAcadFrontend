@@ -1,7 +1,8 @@
 <template>
 <div>
     <b-navbar toggleable="lg" type="dark" variant="info" fixed="top">
-    <b-navbar-brand href="#" style="font-weight:bold; font-size:27px;">Albedo Academy</b-navbar-brand>
+    <b-navbar-brand href="#" style="font-weight:bold; font-size:27px;" to="/" @click.native="open = false">
+      Albedo Academy</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -29,7 +30,7 @@
 
 <script>
 export default {
-    
+    name: "Navbar"    
 }
 </script>
 

@@ -1,10 +1,12 @@
 <script>
-import NavBar from "@/components/Navbar";
-import FooterBar from "@/components/Footer";
+import NavBar from "../components/Navbar.vue";
+import ContactUs from "@/components/ContactUs.vue";
+import FooterBar from "@/components/Footer.vue";
 
 export default {
   components: {
     NavBar,
+    ContactUs,
     FooterBar
   }
 };
@@ -13,11 +15,9 @@ export default {
 <template>
   <div>
     <nav-bar />
-
-    <div class="container">
+    <div >
       <slot />
     </div>
-
     <footer-bar />
   </div>
 </template>

@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <Default />
+  <div>
+    <Carousel />
+    <Courses />
+    <Advertisements />
+    <Blogs />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Default from '../layouts/Default.vue'
+
+import Advertisements from '@/pages/Advertisements'
+import Blogs from '@/pages/Blogs'
+import Carousel from '@/pages/Carousel'
+import Courses from '@/pages/Courses'
 
 export default {
   name: 'home',
   components: {
-    Default
+    Advertisements,
+    Blogs,
+    Carousel,
+    Courses
   }
 }
 </script>

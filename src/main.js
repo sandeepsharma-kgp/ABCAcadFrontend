@@ -6,7 +6,7 @@ import Default from "./layouts/Default.vue";
 import NoContactUs from "./layouts/NoContactUs";
 
 Vue.component("Default-layout", Default);
-Vue.component("no-contact-us-layout", NoContactUs);
+Vue.component("NoContactUs-layout", NoContactUs);
 
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'

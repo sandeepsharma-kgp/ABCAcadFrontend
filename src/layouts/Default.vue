@@ -14,16 +14,19 @@ export default {
 
 <template>
   <div>
-    <nav-bar />
-
-        <div >
-          <slot />
-        </div>
-     
-    
-   
-
+    <nav-bar/>
+    <div>
+      <div class="container">
+        <slot />
+      </div>
+    </div>
     <footer-bar />
-    <ContactUs></ContactUs>
+    <ContactUs></ContactUs>    
   </div>
 </template>
+
+<style>
+.container{
+  margin-top: 100px
+}
+</style>
