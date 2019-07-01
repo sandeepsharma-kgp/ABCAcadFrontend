@@ -37,6 +37,7 @@ export default {
 .navbar {
     background-color : #e16119 !important;
 }
+
 .scholar{
   background : none;
   color :white;
@@ -44,10 +45,12 @@ export default {
   border-color: white;
   
 }
+
 .call{
   color : white;
   text-decoration: none;
 }
+
 .call:hover{
   color:white;
 }
