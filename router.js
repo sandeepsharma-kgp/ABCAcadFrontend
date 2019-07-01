@@ -16,7 +16,7 @@ export default new Router({
           path: "/",
           name: "home",
           meta: { layout: "Default" },
-          component: require("@/pages/Home.vue").default // load sync home
+          component: require("@/pages/Advertisements.vue").default // load sync home
         },
         {
           path: "/photos",
@@ -27,12 +27,12 @@ export default new Router({
           path: "/about-us",
           name: "about",
           meta: { layout: "no-sidebar" },
-          component: () => import("@/pages/About.vue")
+          component: () => import("@/views/About.vue")
         },
         {
           path: "/story/:id",
           name: "post",
-          component: () => import("@/pages/Post.vue")
+          component: () => import("@/pages/Blogs.vue")
         },
         {
           path: "*",

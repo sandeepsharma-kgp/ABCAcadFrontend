@@ -11,7 +11,7 @@
       <b-navbar-nav class="ml-auto">  
           <a href="#" class = "call"><b-img :src="require('../assets/icons/call.svg')" style="padding : 14px;"></b-img><h8 style="padding : 14px; padding-left:0px;">+91-xxxxxxxxxx</h8></a>
           <b-button variant="outline-dark" class="scholar">Scholarship</b-button>
-          <b-nav-item href="#" style="padding:5px;" active>About Us</b-nav-item>
+          <b-nav-item href="#" style="padding:5px;" active :to="{name: 'about'}" @click.native="open = false" >About Us</b-nav-item>
           <b-nav-item href="#" style="padding:5px;" active>Doubts & Solution</b-nav-item>
           <b-nav-item-dropdown text="All Program" right type="dark" style="padding:5px;">
             <b-dropdown-item href="#">Class 8-9</b-dropdown-item>

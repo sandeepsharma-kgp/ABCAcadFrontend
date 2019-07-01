@@ -5,7 +5,7 @@ import router from './router'
 import Default from "./layouts/Default.vue";
 import NoContactUs from "./layouts/NoContactUs";
 
-Vue.component("default-layout", Default);
+Vue.component("Default-layout", Default);
 Vue.component("no-contact-us-layout", NoContactUs);
 
 import BootstrapVue from 'bootstrap-vue'
