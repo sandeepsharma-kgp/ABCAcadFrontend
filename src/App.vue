@@ -7,6 +7,12 @@
     <Students/>
     <Videos/>
    
+    <Carousel />
+    <Courses />
+    <Advertisements />
+    <Blogs />
+    <Footer />
+    <ContactUs />
   </div>
 </template>
 
@@ -17,6 +23,12 @@ import Cards from './components/Cards'
 import Centers from './components/Centers.vue'
 import Students from './components/Students.vue'
 import Videos from './components/Videos.vue'
+import Advertisements from './components/Advertisements'
+import Blogs from './components/Blogs'
+import Footer from './components/Footer'
+import ContactUs from './components/ContactUs'
+import Carousel from './components/Carousel'
+import Courses from './components/Courses'
 
 export default {
   name: 'app',
@@ -26,8 +38,14 @@ export default {
     Cards,
     Centers,
     Students,
-    Videos
+    Videos,
     
+    Advertisements,
+    Blogs,
+    Footer,
+    ContactUs,
+    Carousel,
+    Courses
   }
 }
 </script>
