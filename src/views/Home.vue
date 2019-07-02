@@ -28,7 +28,11 @@ export default {
     Advertisements,
     Blogs,
     Carousel,
-    Courses
+    Courses,
+    Cards,
+    Centers,
+    Students,
+    Videos
   }
 }
 </script>
