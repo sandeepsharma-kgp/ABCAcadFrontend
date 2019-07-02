@@ -1,34 +1,12 @@
-
 <template>
 <div>
-    <b-navbar toggleable="lg" type="dark" variant="info" fixed="top">
-    <b-navbar-brand href="#" style="font-weight:bold; font-size:27px;" to="/" @click.native="open = false">
-      Albedo Academy</b-navbar-brand>
+<!--<button onclick="document.getElementById('id01').style.display='block'" style="position:absolute; right:0; top:0; width:auto;">
+  Login</button>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">  
-          <a href="#" class = "call"><b-img :src="require('../assets/icons/call.svg')" style="padding : 14px;"></b-img><h8 style="padding : 14px; padding-left:0px;">+91-xxxxxxxxxx</h8></a>
-          <b-button variant="outline-dark" class="scholar">Scholarship</b-button>
-          
-
-   
-
-    <b-modal hide-footer
-      id="modal-prevent-closing"
-      ref="modal"
-      title="Login/Sign Up"
-      size="xl"
-      @show="resetModal"
-      @hidden="resetModal"
-      @ok="handleOk"
-      
-    >
-    <form ref="form" @submit.stop.prevent="handleSubmit">
-    <div id="login">
+-->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" to="/" @click.native="open = false" class="close" title="Close Modal">&times;</span>
+  <div id="login">
     <div class="sign-up">
       <h1> Welcome to Albedo </h1>
       <form v-on:submit="signUpData">
@@ -60,100 +38,34 @@
         <div class="error" v-if="error">{{error}}{{remember}}</div>
         <input class="sign-in-email" type="email" placeholder="Email" v-model="signIn.email" required/>
         <input style="position:relative; top: 15px;" class="sign-in-password" type="password" v-model="signIn.password" placeholder="Password" required/>
-        <label class="container"> Remember me
+      
+       <label class="container"> Remember me
           <input type="checkbox" value="marked" v-model='remember'>
           <span class="checkmark"></span>
         </label>
         <input style="position:relative; top: 50px;" type="submit" value="SIGN IN">
-        <div style="text-align:center; position:relative; top: 50px;" class="psw">Forgot Password?</div>
+        <div style="position:relative; top: 50px;" class="psw">Forgot Password?</div>
       </form>
+      
     </div>
+
     <div class="or">OR</div>
   </div>
-  </form>
-  </b-modal>
-          <b-nav-item href="#" style="padding:5px;" active :to="{name: 'about'}" @click.native="open = false" >About Us</b-nav-item>
-          <b-nav-item href="#" style="padding:5px;" active :to="{name: 'login'}" @click.native="open = false">Doubts & Solution</b-nav-item>
-          <b-nav-item-dropdown text="All Program" right type="dark" style="padding:5px;">
-            <b-dropdown-item href="#">Class 8-9</b-dropdown-item>
-            <b-dropdown-item href="#">Class 9-10</b-dropdown-item>
-            <b-dropdown-item href="#">Class 11-12</b-dropdown-item>
-          </b-nav-item-dropdown>
-          <b-button variant="transparent" v-b-modal.modal-prevent-closing><b-img :src="require('../assets/icons/man-user.svg')" style="padding : 8px;" ></b-img></b-button>
-          <b-img :src="require('../assets/icons/map-pin-marked.svg')" style="padding : 8px;"></b-img>
-          
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>  
 </div>
+  </div>
 </template>
 
 <script>
+// Get the modal
+var modal = document.getElementById('id01');
 
-export default {
-    name: "Navbar",
-    data() {
-      return {
-        name: '',
-        nameState: null,
-        submittedNames: []
-      }
-    },
-    methods: {
-      checkFormValidity() {
-        const valid = this.$refs.form.checkValidity()
-        this.nameState = valid ? 'valid' : 'invalid'
-        return valid
-      },
-      resetModal() {
-        this.name = ''
-        this.nameState = null
-      },
-      handleOk(bvModalEvt) {
-        // Prevent modal from closing
-        bvModalEvt.preventDefault()
-        // Trigger submit handler
-        this.handleSubmit()
-      },
-      handleSubmit() {
-        // Exit when the form isn't valid
-        if (!this.checkFormValidity()) {
-          return
-        }
-        // Push the name to submitted names
-        this.submittedNames.push(this.name)
-        // Hide the modal manually
-        this.$nextTick(() => {
-          this.$refs.modal.hide()
-        })
-      }
-    }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-
+}
 </script>
-
-<style scoped>
-.navbar {
-    background-color : #e16119 !important;
-}
-
-.scholar{
-  background : none;
-  color :white;
-  border-radius : 15px;
-  border-color: white;
-  
-}
-
-.call{
-  color : white;
-  text-decoration: none;
-}
-
-.call:hover{
-  color:white;
-}
-</style>
 <script>
 export default {
   name: 'login',
@@ -189,17 +101,17 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
 
 #login{
   position: relative;
   margin:1% auto;
-  width: 100%;
+  width: 80%;
   height: 550px;
   background: #fff;
 
 }
-#login .sign-up{
+.sign-up{
   position: absolute;
   top: 0;
   left: 0;
@@ -208,29 +120,27 @@ export default {
   width: 50%;
   height: 500px;
 }
-#login h1 {
+h1 {
   margin: 0 0 20px 0;
   font-weight: bold;
   font-size: 16px;
-  text-align: center;
 }
-#login h2 {
-  text-align: center;
+h2 {
   margin: 0 0 20px 0;
   font-weight: bold;
   font-size: 16px;
   color: whitesmoke;
   font-family:'Lucida Sans','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',  Arial, sans-serif; 
 }
-#login .psw{
+.psw{
   color:white;
   font-size: 12px;
   cursor: pointer;
 }
-#login input[type="text"],
-#login input[type="tele"],
-#login input[type="email"],
-#login input[type="password"]
+input[type="text"],
+input[type="tele"],
+input[type="email"],
+input[type="password"]
 {
   display: block;
   box-sizing: border-box;
@@ -246,7 +156,7 @@ export default {
   border-radius: 17px;
   transition: 0.2s ease;
 }
-#login select{
+select{
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -265,22 +175,22 @@ export default {
   -moz-appearance: none;
   -webkit-appearance: none;
 }	
-#login .select-arrow{
+.select-arrow{
   height: 30px;
   width: 30px;
   position: absolute;
   top: 240px;
   left: calc(100% - 80px);
 }
-#login select option {
+select option {
   color: black;
 }
-#login select option[data-default] {
+select option[data-default] {
   color: #888;
 }
 
 
-#login input[type="submit"]{
+input[type="submit"]{
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -296,13 +206,13 @@ export default {
   cursor: pointer;
   transition: 0.2s ease;
 }
-#login input[type="submit"]:hover,
-#login input[type="submit"]:focus
+input[type="submit"]:hover,
+input[type="submit"]:focus
 {
   background: #ffa64d;
   transition: 0.2s ease;
 }
-#login .sign-in{
+.sign-in{
   position: absolute;
   top: 0;
   right: 0;
@@ -316,7 +226,7 @@ export default {
   background-position: center;
   
 }
-#login .or{
+.or{
   position: absolute;
   top: 50%;
   left: calc(50% - 20px);;
@@ -330,10 +240,11 @@ export default {
   font-weight: 600;
   font-family: sans-serif;
 }
-#login .container {
+.container {
   display: block;
   position: relative;
-  padding-left: 30px;
+  top: 15px;
+  padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   color: white;
@@ -342,11 +253,10 @@ export default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: center;
 }
 
 /* Hide the browser's default checkbox */
-#login .container input {
+.container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -355,39 +265,39 @@ export default {
 }
 
 /* Create a custom checkbox */
-#login .checkmark {
+.checkmark {
   position: absolute;
   border: #fff;
-  left: calc(50% - 60px);
-  height: 14px;
-  width: 14px;
+  left: calc(50% - 50px);
+  height: 10px;
+  width: 10px;
   background-color: transparent;
   border: 3px solid white;
   border-radius: 2px;
 }
-#login .container input:checked ~ .checkmark {
+.container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
 /* On mouse-over, add a grey background color */
-#login .container:hover input ~ .checkmark {
+.container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-#login .checkmark:after {
+.checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-#login .container input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-#login .container .checkmark:after {
+.container .checkmark:after {
   left: 2px;
   top: 0px;
   width: 3px;
@@ -398,11 +308,54 @@ export default {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-#login input:focus, #login textarea:focus,#login  select:focus{
+input:focus, textarea:focus, select:focus{
         outline: none;
         
 }
-#login div .error{
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color:  rgba(231, 180, 165, 0.486);
+  padding-top: 50px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 38px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+div.error{
   margin-bottom: 10px;
   padding: 4px;
   display: block;
@@ -419,12 +372,12 @@ export default {
     width : 100%;
     height : auto;
   }
-  #login .sign-up{
+  .sign-up{
   background:  white;
   width: 100%;
   height: 600px;
 }
-  #login .sign-in{
+  .sign-in{
   position: absolute;
   top: 600px;
   right: none;
@@ -432,24 +385,24 @@ export default {
   width: 100%;
   
 }
-#login select,
-#login input[type="text"],
-#login input[type="tele"],
-#login input[type="email"],
-#login input[type="password"]
+select,
+input[type="text"],
+input[type="tele"],
+input[type="email"],
+input[type="password"]
 {
   
   width: 100%;
 } 
-#login input[type="submit"]{
+input[type="submit"]{
   width: 100%;
 }
-#login .or{
+.or{
   position: absolute;
   top: 580px;
   left: calc(50% - 20px);
 }
-#login .select-arrow{
+.select-arrow{
   position: absolute;
   top: 240px;
 }

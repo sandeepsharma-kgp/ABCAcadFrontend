@@ -10,7 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      meta: {layout: "NoContactUs"},
+      meta: {layout: "Default"},
       component: require("@/views/Home.vue").default
     },
     {
@@ -21,6 +21,15 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       meta: {layout: "Default"},
       component: () => import(/* webpackChunkName: "about" */ './pages/About.vue')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      // route level code-splitting
+      // this generates a separate chunk (about.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      meta: {layout: "blank"},
+      component: () => import(/* webpackChunkName: "about" */ './components/login.vue')
     }
   ]
 })
