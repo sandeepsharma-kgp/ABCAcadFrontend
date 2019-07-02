@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Cards />
+    <Centers/>
+    <Students/>
+    <Videos/>  
     <Carousel />
     <Courses />
     <Advertisements />
