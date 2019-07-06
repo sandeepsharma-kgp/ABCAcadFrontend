@@ -11,7 +11,7 @@ export default new Router({
       path: '/',
       name: 'home',
       meta: {layout: "Default"},
-      component: require("@/views/Home.vue").default
+      component: require("@/pages/Home.vue").default
     },
     {
       path: '/about',

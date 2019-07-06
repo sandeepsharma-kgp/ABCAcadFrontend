@@ -16,7 +16,7 @@ export default {
   <div>
     <nav-bar/>
     <div>
-      <div class="container">
+      <div>
         <slot />
       </div>
     </div>
@@ -26,7 +26,5 @@ export default {
 </template>
 
 <style>
-.container{
-  margin-top: 100px
-}
+
 </style>
