@@ -128,7 +128,7 @@
                 <b-card-text>
                     <div class="container"><b-form-select v-model="selectBoard" :options="Board" style="background-color:#62959a; color:white;"></b-form-select></div>
                     <div class="container"><b-form-select v-model="selectClass" :options="Class" style="background-color:#62959a; color:white;"></b-form-select></div>
-                    <div class="container"><b-button style="width:100%; background-color:#e16119; border-color:#e16119;">Submit</b-button></div>
+                    <div class="container"><b-button style=" background-color:#e16119; border-color:#e16119; width:100%;"><h4>Submit</h4></b-button></div>
                 </b-card-text>
             </b-card>
         </b-card-group>
@@ -193,16 +193,16 @@
             </b-col>
 
             <b-col><strong style="font-size:20px; font-weight:bold; color:#141313;">Questions & Answers</strong>
-                <div style="padding: 40px 0px 0px 14px;">
+                <div style="padding: 60px 0px 0px 14px;">
                     
                     <b-row>    
                         <b-col sm="8">
                         <b-form-input v-model="text" placeholder="Type your question here..."></b-form-input>
                         </b-col>
                         <b-col sm="4">
-                        <b-button style="background-color:#e16119; border-color:#e16119;">Ask Question</b-button>
+                        <b-button style="background-color:#e16119; border-color:#e16119; height :50%; width:150px;">Ask Question</b-button>
                         </b-col>
-                    </b-row><br><br>
+                    </b-row>
                     
                     <b-card no-body class="overflow-hidden" style="height:150px;">
                     <b-row no-gutters>
@@ -242,13 +242,13 @@
         </b-row>
         </b-container>
     </div>
-    <!--------------------blogs ends----------------------->
+<!--------------------blogs ends----------------------->
 
-    <!-----------the best starts------------------>
-<div class="best">
-  <img src="../assets/images/ClassroomProgramCorousel.jpg" style="height : 30%; width:95%;">
-  <div class="centered"><h3>The Best</h3><h4>We pride ourselves in being th best in teaching</h4></div>
-</div>
+<!-----------the best starts------------------>
+        <div class="best">
+        <img src="../assets/images/ClassroomProgramCorousel.jpg" style="width:95%;">
+        <div class="centered"><h3>The Best</h3><h4>We pride ourselves in being the best in teaching</h4></div>
+        </div>
 <!---------------the best ends---------------->
 
     <!-----------------cards start---------------->
@@ -653,7 +653,8 @@
                 </div>
         </div>
     </div>
-    </div> 
+    </div>
+    <br><br><br><br>
     <!--------------video ends-------------->
 
 
