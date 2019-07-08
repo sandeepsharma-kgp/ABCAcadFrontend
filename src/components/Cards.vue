@@ -1,7 +1,5 @@
 <template>
 <div style="background-color:#F9EEEE;">
-    
-
     <div style="padding:30px 0px; background-color:#FDFCFC; align:center">
         <div>
         <p style="font-weight: bold; padding:0px; color:	#000000; font-size: 30px;">Classroom Programs</p>

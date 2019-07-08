@@ -1,55 +1,35 @@
 <template>
   <div id="app">
-    <Navbar />
-    <HelloWord/>
-    <Cards />
-    <Centers/>
-    <Students/>
-    <Videos/>  
-    <Carousel />
-    <Courses />
-    <Advertisements />
-    <Blogs />
-    <Footer />
-    <ContactUs />
+    <component :is="layout">
+      <router-view/>
+    </component>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import HelloWord from './components/HelloWorld'
-import Cards from './components/Cards'
-import Centers from './components/Centers.vue'
-import Students from './components/Students.vue'
-import Videos from './components/Videos.vue'
-import Advertisements from './components/Advertisements'
-import Blogs from './components/Blogs'
-import Footer from './components/Footer'
-import ContactUs from './components/ContactUs'
-import Carousel from './components/Carousel'
-import Courses from './components/Courses'
+const default_layout = "default";
 
 export default {
-  name: 'app',
-  components: {
-    Navbar,
-    HelloWord,
-    Cards,
-    Centers,
-    Students,
-    Videos,
-    
-    Advertisements,
-    Blogs,
-    Footer,
-    ContactUs,
-    Carousel,
-    Courses
+  computed: {
+    layout() {
+      return (this.$route.meta.layout || default_layout) + "-layout";
+    }
+  },
+
+  created() {
+    // nothing defined here (when this.$route.path is other than "/")
+    console.log(this.$route, this.$route.meta.layout);
+  },
+
+  updated() {
+    // something defined here whatever the this.$route.path
+    console.log(this.$route, this.$route.meta.layout);
   }
-}
+};
 </script>
 
-<style>
+
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
