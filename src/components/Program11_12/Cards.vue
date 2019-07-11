@@ -8,7 +8,7 @@
         <b-card-group style="padding:20px">
             <b-card>
              
-               <b-img :src="require('../assets/Icons/study1.svg')" style="padding : 1px 85px; "></b-img>
+               <b-img :src="require('@/assets/icons/study1.svg')" style="padding : 1px 85px; "></b-img>
                  <h3 class="text-primary" style="font-weight: bold; padding:10px width:124.25 height:48;">Lorem ipsum</h3>
                 <b-card-text style="padding:2px 0px;">
                     <div class="container">    
@@ -24,7 +24,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <b-card title="">
-             <b-img :src="require('../assets/Icons/study1.svg')" style="padding : 1px 85px; "></b-img>
+             <b-img :src="require('@/assets/icons/study1.svg')" style="padding : 1px 85px; "></b-img>
                  
                  <h3 class="text-primary" style="font-weight: bold; padding:10px width:124.25 height:48;">Lorem ipsum</h3>
                 <b-card-text >
@@ -39,7 +39,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <b-card title="">
-               <b-img :src="require('../assets/Icons/study1.svg')" style="padding : 1px 85px; "></b-img>
+               <b-img :src="require('@/assets/icons/study1.svg')" style="padding : 1px 85px; "></b-img>
                  <h3 class="text-primary" style="font-weight: bold; padding:10px width:124.25 height:48;">Lorem ipsum</h3>
                 <b-card-text style="padding:0px 0px;">
                     <div class="container">    
@@ -62,7 +62,7 @@
       <b-card-group style="padding:20px">
         
         <b-card title="">
-            <b-img :src="require('../assets/Icons/study1.svg')" style="padding : 1px 90px; "></b-img>
+            <b-img :src="require('@/assets/icons/study1.svg')" style="padding : 1px 90px; "></b-img>
                  <h3 class="text-primary" style="font-weight: bold; padding:10px width:124.25 height:48;">Practice Exams</h3>
                 <b-card-text style="">
                     <div class="container">    
@@ -76,7 +76,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <b-card >
-               <b-img :src="require('../assets/Icons/study1.svg')" style="padding : 1px 90px; "></b-img>
+               <b-img :src="require('@/assets/icons/study1.svg')" style="padding : 1px 90px; "></b-img>
                     <h3 class="text-primary" style="font-weight: bold; padding:10px width:124.25 height:48;">Scholarship Exams</h3>
                 <b-card-text style="padding:0px 0px;">
                     <div class="container">    

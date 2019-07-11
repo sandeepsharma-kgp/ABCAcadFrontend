@@ -21,6 +21,24 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       meta: {layout: "Default"},
       component: () => import(/* webpackChunkName: "about" */ './pages/About.vue')
+    },
+    {
+      path: '/program8_9',
+      name: 'program8_9',
+      meta: {layout: "Default"},
+      component: () => import('./pages/Program8_9.vue')
+    },
+    {
+      path: '/program11_12',
+      name: 'program11_12',
+      meta: {layout: "Default"},
+      component: () => import('./pages/Program11_12.vue')
+    },
+    {
+      path: '/program9_10',
+      name: 'program9_10',
+      meta: {layout: "Default"},
+      component: () => import('./pages/Program9_10.vue')
     }
   ]
 })

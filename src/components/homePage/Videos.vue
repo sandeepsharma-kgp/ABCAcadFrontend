@@ -9,14 +9,14 @@
             <div class="col-md-4">
                 <div class="thumbnail">
                 
-                    <img src="../assets/Images/abacus-addition-arithmetic-1019470.png" alt="Lights" style="width:420" height="240">
+                    <img src="@/assets/images/abacus-addition-arithmetic-1019470.png" alt="Lights" style="width:420" height="240">
                 
                 </div>
         </div>
         <div class="col-md-4">
                 <div class="thumbnail">
                 
-                    <img src="../assets/Images/black-and-white-blur-capture-240163 (1).png" alt="Nature" style="width:420" height="240">
+                    <img src="@/assets/images/black-and-white-blur-capture-240163 (1).png" alt="Nature" style="width:420" height="240">
 
                 </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="col-md-4">
                 <div class="thumbnail">
                 
-                    <img src="../assets/Images/biology-blur-blurred-background-954585.png" alt="Fjords" style="width:420" height="240">
+                    <img src="@/assets/images/biology-blur-blurred-background-954585.png" alt="Fjords" style="width:420" height="240">
                 
                 </div>
         </div>

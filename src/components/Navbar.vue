@@ -75,9 +75,9 @@
           <b-nav-item href="#" style="padding:5px;" active :to="{name: 'about'}" @click.native="open = false" >About Us</b-nav-item>
           <b-nav-item href="#" style="padding:5px;" active :to="{name: 'login'}" @click.native="open = false">Doubts & Solution</b-nav-item>
           <b-nav-item-dropdown text="All Program" right type="dark" style="padding:5px;">
-            <b-dropdown-item href="#">Class 8-9</b-dropdown-item>
-            <b-dropdown-item href="#">Class 9-10</b-dropdown-item>
-            <b-dropdown-item href="#">Class 11-12</b-dropdown-item>
+            <b-dropdown-item href="#"  active :to="{name: 'program8_9'}" @click.native="open = false">Class 8-9</b-dropdown-item>
+            <b-dropdown-item href="#" active :to="{name: 'program9_10'}" @click.native="open = false">Class 9-10</b-dropdown-item>
+            <b-dropdown-item href="#" active :to="{name: 'program11_12'}" @click.native="open = false">Class 11-12</b-dropdown-item>
           </b-nav-item-dropdown>
           <b-button variant="transparent" v-b-modal.modal-prevent-closing><b-img :src="require('../assets/icons/man-user.svg')" style="padding : 8px;" ></b-img></b-button>
           <b-img :src="require('../assets/icons/map-pin-marked.svg')" style="padding : 8px;"></b-img>
