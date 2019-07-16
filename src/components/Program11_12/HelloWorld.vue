@@ -1,7 +1,7 @@
 <template>
   <div class="best">
   
-<img src="@/assets/images/output-onlinepngtools.jpg" class="img-fluid" fluid alt="responsive" max-width=1900 height="400"> <img>
+<img src="@/assets/images/teaching-board.jpg" class="img-fluid" fluid alt="responsive" max-width=1900 height="400"> <img>
 <!-- E:\ABCAcademyFrontend\src\assets\images\output-onlinepngtools.png -->
 <div class="centered" style="">
   <h3 class="text-white">The Best</h3><br>
