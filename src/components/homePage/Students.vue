@@ -24,7 +24,7 @@
             <h5 class="text-dark" style="font-weight: bold;font-size: 30px;padding:20px 0px">Words from our Students</h5>
         </div>
         <div class="container">
-        <img src="@/assets/images/black-and-white-boy-casual-555790.png" class="rounded-circle" alt="Sample image" width="150" height="125">
+        <img src="@/assets/images/black-and-white-boy-casual-555790.jpg" class="rounded-circle" alt="Sample image" width="150" height="125">
         <p class="text-dark" style="padding:30px">Lorem ipsum dolar sit amet consectuer adipiscing elite sed do eiusmod tempor incididunt ut labor at dolar manga aliqua</p> 
         </div>
       </div>
@@ -40,7 +40,7 @@
             <h5 class="text-dark" style="font-weight: bold;font-size: 30px;padding:20px 0px">Words from our Students</h5>
         </div>
         <div class="container">
-        <img src="@/assets/images/black-and-white-boy-casual-555790.png" class="rounded-circle" alt="Sample image" width="150" height="125">
+        <img src="@/assets/images/black-and-white-boy-casual-555790.jpg" class="rounded-circle" alt="Sample image" width="150" height="125">
         <p class="text-dark" style="padding:30px">Lorem ipsum dolar sit amet consectuer adipiscing elite sed do eiusmod tempor incididunt ut labor at dolar manga aliqua</p> 
         </div>
       </div>
@@ -52,7 +52,7 @@
             <h5 class="text-dark" style="font-weight: bold;font-size: 30px;padding:20px 0px">Words from our Students</h5>
         </div>
         <div class="container">
-        <img src="@/assets/images/black-and-white-boy-casual-555790.png" class="rounded-circle" alt="Sample image" width="150" height="125">
+        <img src="@/assets/images/black-and-white-boy-casual-555790.jpg" class="rounded-circle" alt="Sample image" width="150" height="125">
         <p class="text-dark" style="padding:30px">Lorem ipsum dolar sit amet consectuer adipiscing elite sed do eiusmod tempor incididunt ut labor at dolar manga aliqua</p> 
         </div>
       </div>
@@ -65,7 +65,7 @@
             <h5 class="text-dark" style="font-weight: bold;font-size: 30px;padding:20px 0px">Words from our Students</h5>
         </div>
         <div class="container">
-        <img src="@/assets/images/black-and-white-boy-casual-555790.png" class="rounded-circle" alt="Sample image" width="150" height="125">
+        <img src="@/assets/images/black-and-white-boy-casual-555790.jpg" class="rounded-circle" alt="Sample image" width="150" height="125">
         <p class="text-dark" style="padding:30px">Lorem ipsum dolar sit amet consectuer adipiscing elite sed do eiusmod tempor incididunt ut labor at dolar manga aliqua</p> 
         </div>
       </div>
