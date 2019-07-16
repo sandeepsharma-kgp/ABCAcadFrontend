@@ -27,11 +27,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     </b-card-text> 
             </b-card>
@@ -43,11 +43,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 
@@ -69,11 +69,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 
@@ -86,11 +86,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 
@@ -112,11 +112,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                   <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 
@@ -129,11 +129,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 
@@ -155,11 +155,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 5px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 5px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 
@@ -172,11 +172,11 @@
                     <p class="text-dark" style="padding:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt a tincidunt eget</p>              
                           </div>
                     <div class="container">
-                        <a href="#" class = "call"><b-img :src="require('../assets/Icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
+                        <a href="#" class = "call"><b-img :src="require('@/assets/icons/telephone.svg')" style="padding : 0px 2px;"></b-img><h8 style="padding : 10px 2px; ">+91xxxxxxxxxx</h8></a>
 
                     </div>
                     <div class="container">
-                    <a href="#" class = "call"><b-img :src="require('../assets/Icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
+                    <a href="#" class = "call"><b-img :src="require('@/assets/icons/gmail.svg')" style="padding : 10px 2px;"></b-img><h8 style="padding : 10px 2px; ">xyz@gmail.com</h8></a>
                     </div>
                     
                 </b-card-text> 

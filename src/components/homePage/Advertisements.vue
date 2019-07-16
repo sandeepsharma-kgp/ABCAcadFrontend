@@ -43,7 +43,6 @@ data() {
           { value: 'CBSE', text: 'CBSE Board' },
           { value: 'ICSE', text: 'ICSE Board' }
         ],
-
         selectClass: null,
         Class: [
           { value: null, text: 'Select your Class' },
@@ -53,7 +52,6 @@ data() {
           { value: '11', text: '11' },
           { value: '12', text: '12' }
         ]
-
       }
     }
 }
@@ -63,11 +61,9 @@ data() {
 .container{
     padding: 20px;
 }
-
 .b-card-group{
     text-align: center;
 }
-
 .b-card{
     color: black;
     height:350px; 

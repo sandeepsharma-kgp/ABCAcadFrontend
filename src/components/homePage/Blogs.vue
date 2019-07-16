@@ -7,7 +7,7 @@
                 <b-card no-body class="overflow-hidden" >
                     <b-row no-gutters>
                     <b-col md="4">
-                        <b-card-img :src="require('../assets/images/blogging-blur-communication-261662.jpg')" style="padding:25px 20px 0px 20px; width:150px;"></b-card-img>
+                        <b-card-img :src="require('@/assets/images/blogging-blur-communication-261662.jpg')" style="padding:25px 20px 0px 20px; width:150px;"></b-card-img>
                     </b-col>
                     <b-col md="8">
                         <b-card-body>
@@ -22,7 +22,7 @@
             <b-card no-body class="overflow-hidden">
                 <b-row no-gutters>
                 <b-col md="4">
-                    <b-card-img :src="require('../assets/images/blogging-blur-communication-261662.jpg')" style="padding:25px 20px 0px 20px; width:150px;"></b-card-img>
+                    <b-card-img :src="require('@/assets/images/blogging-blur-communication-261662.jpg')" style="padding:25px 20px 0px 20px; width:150px;"></b-card-img>
                 </b-col>
                 <b-col md="8">
                     <b-card-body>
@@ -37,7 +37,7 @@
             <b-card no-body class="overflow-hidden">
                 <b-row no-gutters>
                 <b-col md="4">
-                    <b-card-img :src="require('../assets/images/blog-businesswoman-create-267569.jpg')" style="padding:25px 20px 0px 20px; width:150px;"></b-card-img>
+                    <b-card-img :src="require('@/assets/images/blog-businesswoman-create-267569.jpg')" style="padding:25px 20px 0px 20px; width:150px;"></b-card-img>
                 </b-col>
                 <b-col md="8">
                     <b-card-body>
@@ -68,7 +68,7 @@
                     <b-card no-body class="overflow-hidden" style="height:150px;">
                     <b-row no-gutters>
                     <b-col md="2">
-                        <b-card-img :src="require('../assets/icons/question.svg')" style="padding:50px 10px; width:80px;"></b-card-img>
+                        <b-card-img :src="require('@/assets/icons/question.svg')" style="padding:50px 10px; width:80px;"></b-card-img>
                     </b-col>
                     <b-col md="10">
                         <b-card-body style="text-align:left;">
@@ -84,7 +84,7 @@
                 <b-card no-body class="overflow-hidden" style="height:150px;">
                     <b-row no-gutters>
                     <b-col md="2">
-                        <b-card-img :src="require('../assets/icons/question.svg')" style="padding:50px 10px; width:80px;"></b-card-img>
+                        <b-card-img :src="require('@/assets/icons/question.svg')" style="padding:50px 10px; width:80px;"></b-card-img>
                     </b-col>
                     <b-col md="10">
                         <b-card-body style="text-align:left;">
@@ -107,7 +107,6 @@
 
 <script>
 export default {
-
 }
 </script>
 
